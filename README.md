@@ -1,0 +1,5 @@
+# Kleedy website (static, upload the whole `site/` folder as the site root — e.g. GitHub Pages)
+- `index.html` landing page (Hebrew), `privacy.html` privacy policy, `terms.html` terms + subscription disclosure, `support.html` FAQ + contact; English copies in `en/`, Russian in `ru/`; shared `style.css`, icons from the app icon.
+- App Store Connect: **Privacy Policy URL** = `https://<your-domain>/privacy.html`, **Support URL** = `https://<your-domain>/support.html`, **Marketing URL** = `https://<your-domain>/` (Terms link `https://<your-domain>/terms.html` can go in the app description / paywall next to Apple's EULA).
+- Placeholders to replace everywhere: `SUPPORT_EMAIL` (contact address) and `APP_STORE_URL` (the app's App Store link, 3 landing pages) — e.g. `grep -rl SUPPORT_EMAIL site | xargs sed -i '' 's/SUPPORT_EMAIL/you@example.com/g'`.
+- Optional: swap the CSS "App Store" button for Apple's official badge artwork; update the support FAQ line about Hebrew addressing (feminine only) once the app lets users choose.
